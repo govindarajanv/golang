@@ -1,0 +1,17 @@
+This will help you to know more about Println
+ Please install godoc using C:\>go get -d golang.org/x/tools/cmd/godoc
+C:\>go doc fmt Println
+package fmt // import "fmt"
+
+    func Println(a ...interface{}) (n int, err error)
+        Println formats using the default formats for its operands and writes to
+        standard output. Spaces are always added between operands and a newline is
+        appended. It returns the number of bytes written and any write error
+        encountered.
+
+C:\>go doc math/rand Intn
+package rand // import "math/rand"
+
+func Intn(n int) int
+    Intn returns, as an int, a non-negative pseudo-random number in [0,n) from
+    the default Source. It panics if n <= 0.
